@@ -1,0 +1,130 @@
+include <-------------------------- The "include" function adds a file to the page.
+include( 'go_datatable.php' ); <--- This code adds go_datatable.php to the page
+include( 'types/types.php' ); <--- This code adds types/type.php to the page
+include( 'go_pnc.php' ); <--- This code adds go_pnc.php to the page
+include( 'go_returns.php' ); <--- This code adds go_returns to the page
+include( 'go_ranks.php' ); <--- This code adds go_ranks.php to the page
+include( 'scripts/go_enque.php' ); <--- This code adds scripts/go_enque.php to the page
+include( 'go_globals.php' ); <--- This code adds go_globals.php to the page
+include( 'go_admin_bar.php' ); <--- This code adds go_admin_bar.php to the page
+include( 'go_message.php' ); <--- This code adds go_message.php to the page
+include( 'styles/go_enque_styles.php' ); <--- This code adds styles/go_engue_styles.php to the page
+include( 'go_options.php' ); <--- This code adds go_options.php to the page
+include( 'go_stats.php' ); <--- This code adds go_stats.php to the page
+include( 'go_clipboard.php' ); <--- This code adds go_clipboard.php to the page
+include( 'go_open_badge.php' ); <--- This code adds go_open_badge.php to the page
+include( 'go_shortcodes.php' ); <--- This code adds go_shortcodes.php to the page
+include( 'go_comments.php' ); <--- This code adds go_comments.php to the page
+include( 'go_definitions.php' ); <--- This code adds go_definitions.php to the page
+include( 'go_mail.php' ); <--- This code adds go_mail.php to the page
+include( 'go_messages.php' ); <--- This code adds go_messages.php to the page
+include( 'go_task_search.php' ); <--- This code adds go_task_search.php to the page
+include( 'go_pods.php' ); <--- This code adds go_pods.php to the page
+register_activation_hook <----------------------------------- This function registers a plugin function to be run when the plugin is activated.
+register_activation_hook( __FILE__, 'go_table_totals' ); <--- This code activates the plugin go_table_total, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_table_individual' ); <--- This code activates the plugin go_table_individual, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_ranks_registration' ); <--- This code activates the plugin go_ranks_registration, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_presets_registration' ); <--- This code activates the plugin go_presets_total, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_install_data' ); <--- This code activates the plugin go_install_data, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_define_options' ); <--- This code activates the plugin go_define_options, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_open_comments' ); <--- This code activates the plugin go_open_comments, which is stored in the file: __FILE__
+register_activation_hook( __FILE__, 'go_tsk_actv_activate' ); <--- This code activates the plugin go_tsk_actv_activate, which is stored in the file: __FILE__
+add_action <--------------------------------------------- This function hooks the function(after comma) to the event(before comma).
+add_action( 'user_register', 'go_user_registration' ); <--- This code hooks
+add_action( 'delete_user', 'go_user_delete' ); <--- This code hooks
+add_action( 'wp_ajax_go_deactivate_plugin', 'go_deactivate_plugin' ); <--- This code hooks
+add_action( 'go_add_post','go_add_post' ); <--- This code hooks
+add_action( 'go_add_currency','go_add_currency' ); <--- This code hooks
+add_action( 'go_add_bonus_currency','go_add_bonus_currency' ); <--- This code hooks
+add_action( 'go_add_penalty','go_add_penalty' ); <--- This code hooks
+add_action( 'go_add_minutes','go_add_minutes' ); <--- This code hooks
+add_action( 'go_return_currency','go_return_currency' ); <--- This code hooks
+add_action( 'go_return_points','go_return_points' ); <--- This code hooks
+add_action( 'go_return_bonus_currency','go_return_bonus_currency' ); <--- This code hooks
+add_action( 'go_return_penalty','go_return_penalty' ); <--- This code hooks
+add_action( 'go_return_minutes','go_return_minutes' ); <--- This code hooks
+add_action( 'go_display_user_focuses', 'go_display_user_focuses' ); <--- This code hooks
+add_action( 'go_display_rewards', 'go_display_rewards' ); <--- This code hooks
+add_action( 'admin_menu', 'go_clipboard' ); <--- This code hooks
+add_action( 'go_jquery_clipboard','go_jquery_clipboard' ); <--- This code hooks
+add_action( 'go_style_clipboard','go_style_clipboard' ); <--- This code hooks
+add_action( 'wp_ajax_go_clone_post', 'go_clone_post' ); <--- This code hooks
+add_action( 'wp_ajax_go_clipboard_intable','go_clipboard_intable' ); <--- This code hooks
+add_action( 'wp_ajax_go_clipboard_intable_messages','go_clipboard_intable_messages' ); <--- This code hooks
+add_action( 'wp_ajax_go_user_option_add','go_user_option_add' ); <--- This code hooks
+add_action( 'go_update_totals','go_update_totals' ); <--- This code hooks
+add_action( 'init', 'go_jquery' ); <--- This code hooks
+add_action( 'init', 'go_admin_menu_js' ); <--- This code hooks
+add_action( 'init', 'go_register_tax_and_cpt' ); <--- This code hooks
+add_action( 'wp', 'go_task_timer_headers' ); <--- This code hooks
+add_action( 'admin_bar_init','go_global_defaults' ); <--- This code hooks
+add_action( 'admin_bar_init','go_global_info' ); <--- This code hooks
+add_action( 'admin_bar_init', 'go_admin_bar' ); <--- This code hooks
+add_action( 'admin_bar_init', 'go_style_everypage' ); <--- This code hooks
+add_action( 'admin_bar_init','go_style_stats' ); <--- This code hooks
+add_action( 'show_admin_bar', 'go_display_admin_bar' ); <--- This code hooks
+add_action( 'go_get_all_ranks','go_get_all_ranks' ); <--- This code hooks
+add_action( 'wp_ajax_test_point_update', 'test_point_update' ); <--- This code hooks
+add_action( 'go_get_all_focuses', 'go_get_all_focuses' ); <--- This code hooks
+add_action( 'wp_ajax_unlock_stage', 'unlock_stage' ); <--- This code hooks
+add_action( 'wp_ajax_task_change_stage','task_change_stage' ); <--- This code hooks
+add_action( 'wp_ajax_go_task_abandon','go_task_abandon' ); <--- This code hooks
+add_action( 'go_update_admin_bar','go_update_admin_bar' ); <--- This code hooks
+add_action( 'go_update_progress_bar','go_update_progress_bar' ); <--- This code hooks
+add_action( 'go_style_periods','go_style_periods' ); <--- This code hooks
+add_action( 'go_jquery_periods','go_jquery_periods' ); <--- This code hooks
+add_action( 'wp_ajax_go_admin_bar_add','go_admin_bar_add' ); <--- This code hooks
+add_action( 'wp_ajax_go_admin_bar_stats','go_admin_bar_stats' ); <--- This code hooks
+add_action( 'wp_ajax_go_class_a_save','go_class_a_save' ); <--- This code hooks
+add_action( 'wp_ajax_go_class_b_save','go_class_b_save' ); <--- This code hooks
+add_action( 'wp_ajax_go_update_user_sc_data', 'go_update_user_sc_data' ); <--- This code hooks
+add_action( 'wp_ajax_go_focus_save','go_focus_save' ); <--- This code hooks
+add_action( 'wp_ajax_go_reset_levels', 'go_reset_levels' ); <--- This code hooks
+add_action( 'wp_ajax_go_save_levels', 'go_save_levels' ); <--- This code hooks
+add_action( 'wp_ajax_go_reset_data', 'go_reset_data' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_task_list','go_stats_task_list' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_move_stage', 'go_stats_move_stage' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_item_list', 'go_stats_item_list' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_rewards_list', 'go_stats_rewards_list' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_minutes_list', 'go_stats_minutes_list' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_penalties_list', 'go_stats_penalties_list' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_badges_list', 'go_stats_badges_list' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_leaderboard_choices','go_stats_leaderboard_choices' ); <--- This code hooks
+add_action( 'wp_ajax_go_stats_leaderboard','go_stats_leaderboard' ); <--- This code hooks
+add_action( 'wp_ajax_go_presets_reset','go_presets_reset' ); <--- This code hooks
+add_action( 'wp_ajax_go_presets_save','go_presets_save' ); <--- This code hooks
+add_action( 'wp_ajax_go_fix_levels', 'go_fix_levels' ); <--- This code hooks
+add_action( 'wp_ajax_listurl', 'listurl' ); <--- This code hooks
+add_action( 'wp_ajax_nopriv_listurl', 'listurl' ); <--- This code hooks
+add_action( 'wp_ajax_go_update_user_focuses', 'go_update_user_focuses'  <--- This code hooks);
+add_action( 'wp_ajax_go_get_all_terms', 'go_get_all_terms' ); <--- This code hooks
+add_action( 'wp_ajax_nopriv_go_get_all_terms', 'go_get_all_terms' ); <--- This code hooks
+add_action( 'wp_ajax_go_get_all_posts', 'go_get_all_posts' ); <--- This code hooks
+add_action( 'wp_ajax_nopriv_go_get_all_posts', 'go_get_all_posts' ); <--- This code hooks
+add_action( 'wp_ajax_go_update_task_order', 'go_update_task_order' ); <--- This code hooks
+add_action( 'wp_ajax_go_search_for_user', 'go_search_for_user' ); <--- This code hooks
+add_action( 'wp_ajax_go_admin_remove_notification', 'go_admin_remove_notification' ); <--- This code hooks
+add_action( 'wp_ajax_go_get_purchase_count', 'go_get_purchase_count' ); <--- This code hooks
+add_shortcode( 'go_stats_page', 'go_stats_page' );
+add_action( 'admin_init', 'go_tsk_actv_redirect' ); <--- This code hooks
+add_action( 'admin_init', 'go_add_delete_post_hook' ); <--- This code hooks
+add_action( 'inRange', 'inRange' );
+add_action( 'isEven','isEven' );
+add_action( 'wp_head', 'go_stats_overlay' );
+add_action( 'admin_head', 'go_stats_overlay' );
+add_action( 'admin_notices', 'go_admin_head_notification' );
+add_action( 'go_display_points','go_display_points' );
+add_action( 'go_display_currency','go_display_currency' );
+add_action( 'go_display_penalty','go_display_penalty' );
+add_action( 'go_display_minutes','go_display_minutes' );
+add_action( 'go_return_options','go_return_options' );
+add_action( 'go_update_globals','go_update_globals' );
+add_action( 'barColor','barColor' );
+add_action( 'go_return_multiplier','go_return_multiplier' );
+add_filter( 'get_comment_author', 'go_display_comment_author' );
+add_action( 'check_custom', 'check_custom' );
+add_action( 'check_values', 'check_values' );
+add_action( 'go_message_user', 'go_message_user' );
+add_filter( 'jetpack_enable_open_graph', '__return_false' );
+add_action( 'login_redirect', 'go_user_redirect', 10, 3 );
+add_filter( 'cron_schedules', 'go_weekly_schedule' );
