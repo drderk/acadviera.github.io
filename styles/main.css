@@ -26,7 +26,7 @@ html, body{
 }
 .box .row.content{
 	flex: 8 1 auto;
-	background-color: blue;
+	background-color: green;
 }
 iframe{
 	width: 100%;
