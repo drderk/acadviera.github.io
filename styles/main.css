@@ -7,6 +7,10 @@ html, body{
 }
 .box{
 	display:flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -moz-box;
 	flex-direction: row;
 	align-items: stretch;
 	flex-flow: row;
